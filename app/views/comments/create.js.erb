@@ -1,0 +1,3 @@
+<% html = render("comments/comment", comment: @comment) %>
+$("#entry-<%= @comment.entry.id %>").find(".entry_comments").append("<%= escape_javascript(html) %>");
+$("#entry-<%= @comment.entry.id%>").find('textarea').val("");

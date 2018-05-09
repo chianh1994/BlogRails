@@ -1,0 +1,9 @@
+<% entry.comments.each do |f| %>
+<div class="media">
+  <div class="media-body">
+    <span class="media-heading"><b><%= f.user.name%></b><span>
+    <i><%= time_ago_in_words f.created_at %> ago.</i>
+    <p><%= f.content %></p>
+  </div>
+</div>
+<% end %>
